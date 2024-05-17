@@ -1,0 +1,9 @@
+- Primeiramente precisamos criar um arquivo com a extensão .html;
+- Podemos abrir o arquivo no navegador, sugiro o Chrome;
+- Neste arquivo podemos escrever código HTML ou simplesmente texto;
+
+
+*** Criamos o arquivo, abrimos no navegador, editamos o arquivo ***
+- Nós criamos um arquivo com HTML, o navegador tem ferramentas para ler, entender e executar este tipo de arquivo;
+- Ele coloca tamanhos diferentes para elementos diferentes, e os posiciona na página;
+- Isso acontece porque os navegadores vêm pré-configurados para este fim;
