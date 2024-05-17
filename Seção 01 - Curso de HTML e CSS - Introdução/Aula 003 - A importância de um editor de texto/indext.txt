@@ -1,0 +1,5 @@
+- Não precisamos de um editor para criar código de HTML e CSS;
+- Porém os editores são ótimas ferramentas para programação;
+- Nos ajudam com: estutura de pastas, erros de sintaxe e highlight de sintax;
+- ALém de terem recursos extras, como terminal integrado e extensões que podem ser adicionadas;
+- Um dos mais conhecidos e usados é o VSCode
