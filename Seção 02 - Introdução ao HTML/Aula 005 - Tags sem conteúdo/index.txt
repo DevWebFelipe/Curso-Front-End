@@ -1,0 +1,5 @@
+- Existem tags em HTML que não possuem conteúdo
+- Elas possuem recursos geralmente, como qebrar linha
+- Para este fim, podemos utilizar a tag 'br'
+- Para uma linha horizontal que divida a tela temos 'hr'
+- Eles também introduzem o conceito de self closing tags, onde a tag não possui uma outra tag de fechamento

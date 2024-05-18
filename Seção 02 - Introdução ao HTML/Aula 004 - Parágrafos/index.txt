@@ -1,0 +1,4 @@
+- Utilizamos os parágrafos para inserir textos maiores;
+- A tag é 'p';
+- Cada parágrafo começa uma nova linha, e este comportamento acontece com todas as tags de bloco;
+- temos várias tags de bloco, os títulos fazem parte deste grupo;
