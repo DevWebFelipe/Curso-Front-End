@@ -1,0 +1,28 @@
+.lista {
+  color: gray;
+  border: 1px solid rgb(51, 51, 51);
+  padding: 10px;
+  font-style: italic;
+}
+
+.lista_2 {
+  color: rgb(78, 10, 10);
+  border: 1px solid rgb(68, 8, 8);
+  background-color: bisque;
+  padding: 5px;
+  font-style: italic;
+}
+
+#lista_unica {
+  color: aqua;
+  background-color: rgb(20, 17, 17);
+  font-size: large;
+  border: 3px solid aqua;
+}
+
+#lista_unica_2 {
+  color: rgb(65, 11, 97);
+  background-color: rgb(124, 124, 124);
+  font-size: large;
+  border: 3px solid rgb(67, 25, 92);
+}
