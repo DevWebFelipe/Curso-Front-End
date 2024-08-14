@@ -1,0 +1,8 @@
+ul{
+    border: 1px solid rgb(51, 51, 51);
+    padding: 10px;
+}
+
+li{
+    color: gray;
+}

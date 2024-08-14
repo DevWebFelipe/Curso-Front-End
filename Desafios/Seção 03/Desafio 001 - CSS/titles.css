@@ -1,0 +1,31 @@
+.titulo {
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+}
+
+h2 {
+  color: blueviolet;
+}
+
+h3 {
+  color: bisque;
+  font-style: oblique;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+h4 {
+  color: cadetblue;
+}
+
+h5 {
+  color: aquamarine;
+  font-style: italic;
+}
+
+h6 {
+  color: azure;
+}
