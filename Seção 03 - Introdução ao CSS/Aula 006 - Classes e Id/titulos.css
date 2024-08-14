@@ -1,0 +1,15 @@
+h3 {
+  border-bottom: 2px solid red;
+}
+
+.titulo {
+  border-bottom: 10px solid rgb(88, 27, 27);
+}
+
+.principal {
+  border-bottom: 10px solid rgb(100, 214, 106);
+}
+
+#titulo {
+  border-bottom: 5px solid rgb(117, 129, 3);
+}

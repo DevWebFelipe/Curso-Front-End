@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="listas.css" />
+    <link rel="stylesheet" href="titulos.css" />
+    <!--
+    
+    *** Ordem arquivos ***
+    1º -> Le o CSS que estiver direto na tag
+    2º -> Le a tag Style que estiver no próprio HTML ou o Link para o arquivo CSS,
+    aqui o que determina quem será lido primeiro é quem estiver declado antes no HTML,
+    lembrando que o código é lido linha por linha de cima para baixo
+    3º -> le quem não foi selecionado no item acima
+
+    Se houver regras que se sobreponham, será respeitado a ordem daquela que foi lida por último, 
+    pois essa irá sobrescrever a regra anterior, por exemplo, se tenho uma regra para a tag p que 
+    diz que a cor do texto deve ser vermelha e depois é lido outra regra também para a tag p que 
+    diz que a cor do testo deve ser amarela, então o texto receberá a cor amarela
+
+    *** Ordem CSS ***
+    1º -> Respeita o que tiver sido selecionado pelo ID
+    2º -> Respeita o que tiver sido selecionado pela Classe
+    3º -> Respeita o que tiver sido selecionado pela Tag
+    4º -> Calcula o valor do grau de prioridade, por exemplo, se tenho 2 classes numa mesma tag, 
+    ela vai ter um valor do grau de prioridade maior, pois estou dizendo que uma determinada
+    tag precisa ter a Classe A e a Classe B para então receber a estilização da regra a qual
+    estou escrevendo    
+    
+    -->
   </head>
   <body>
     <ul class="lista">
@@ -73,5 +98,10 @@
         Abacate
       </ul>
     </ul>
+
+    <h3>Titulo 1</h3>
+    <h3 class="titulo">Titulo 2</h3>
+    <h3 id="titulo" class="principal">Titulo 3</h3>
+    <h3 class="principal">Titulo 4</h3>
   </body>
 </html>
