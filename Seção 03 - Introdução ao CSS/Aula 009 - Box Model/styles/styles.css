@@ -30,3 +30,18 @@
   padding-bottom: 120px;
   padding-right: 10px;
 }
+
+/* Shorthand properties */
+/* Topo, Direita, Base, esquerda */
+.padding-individual-shorthand {
+  background-color: #444;
+  color: #fff;
+  padding: 6px 12px 18px 24px;
+}
+
+/* Altura, largura */
+.padding-individual-shorthand-2 {
+  background-color: #444;
+  color: #fff;
+  padding: 20px 40px;
+}
