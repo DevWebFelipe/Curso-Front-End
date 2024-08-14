@@ -1,0 +1,34 @@
+/* Cor por nome */
+.color_name {
+  color: red;
+}
+
+/* Cor por HEX (Hexadecimal, normalmente é o mais utilizado, 6 dígitos seguidos de #) */
+/*
+2 primeiros -> representam o vermelho
+2 do meio -> representam o verde
+2 últimos -> representam o azul
+
+Os valores vão de 0 a 9 e A a F
+0 é o mais escuro e F o mais claro
+O valor de #000 é a cor preta e o #FFF a cor branca
+
+Pode-se também abreviar, caso os números/letras se repitam
+#112233 = #123
+#FFFFFF = #FFF
+#555555 = #555
+#AA55FF = #A5F
+*/
+.color_name {
+  background-color: #832e2e;
+}
+
+/* Cor por RGB (Red Green Blue) */
+/*
+Valores vão de 0 a 255
+onde 0 é o mais escuro e 255 o mais claro
+necessário informar o valor para as 3 cores
+*/
+.color_name {
+  color: rgb(14, 7, 73);
+}
