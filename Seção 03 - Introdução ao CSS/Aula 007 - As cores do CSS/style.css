@@ -1,6 +1,7 @@
 /* Cor por nome */
 .color_name {
   color: red;
+  font-size: 30px;
 }
 
 /* Cor por HEX (Hexadecimal, normalmente é o mais utilizado, 6 dígitos seguidos de #) */
@@ -31,4 +32,42 @@ necessário informar o valor para as 3 cores
 */
 .color_name {
   color: rgb(14, 7, 73);
+}
+
+/* Cor por RGBA */
+/*
+Funciona quase da mesma forma, porém, tem um parametro a mais que se refere
+a opacidade, que pode ir de sólido a tranparente
+0 é transparente e 1 totalmente visível
+os valorese serão 0.5
+*/
+.color_name {
+  background-color: rgba(134, 51, 26, 0.5);
+}
+
+/* Cor por HSL (pouco utilizado) */
+.color_name {
+  color: hsl(155, 80%, 20%);
+}
+
+/* Cor por HSLA (pouco utilizado) */
+/*
+Funciona quase da mesma forma, porém, tem um parametro a mais que se refere
+a opacidade, que pode ir de sólido a tranparente
+0 é transparente e 1 totalmente visível
+os valorese serão 0.5
+*/
+.color_name {
+  color: rgb(3, 19, 12);
+}
+
+.fundo_texto {
+  padding: 5%;
+  background-color: rgb(8, 97, 35);
+  opacity: 0.6;
+}
+
+.fundo_texto2 {
+  padding: 5%;
+  background-color: rgba(8, 97, 35, 0.459);
 }
