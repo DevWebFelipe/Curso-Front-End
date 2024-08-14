@@ -1,0 +1,20 @@
+.img {
+  background-image: url("../img/Menu.jpg");
+  color: #fff;
+  height: 80px;
+  text-align: center;
+}
+
+.img-centralizada, /*Regra será aplicada nas duas classes*/
+.img-nao-centralizada {
+  height: 400px;
+  width: 400px;
+  background-image: url("../img/GameOfThrones.jpg");
+  padding: 5px;
+  border: 5px solid #fff;
+}
+
+.img-centralizada {
+  background-position: center;
+  background-size: cover;
+}
