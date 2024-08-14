@@ -1,11 +1,32 @@
 /* Largura e altura */
+.height-width-2,
 .height-width {
   height: 100px;
+  background-color: blueviolet;
+}
+
+.height-width {
   width: 200px;
   background-color: red;
 }
 
-.height-width-2 {
-  height: 100px;
-  background-color: blueviolet;
+/* Padding */
+.without-padding,
+.padding {
+  background-color: #111;
+  color: #fff;
+}
+
+.padding,
+.padding-individual {
+  background-color: darkgray;
+  padding: 20px;
+}
+
+/* Padding individual */
+.padding-individual {
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  padding-right: 10px;
 }
