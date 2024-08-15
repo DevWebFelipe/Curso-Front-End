@@ -1,0 +1,150 @@
+/* Tamanho */
+.menor,
+.medio,
+.maior {
+  font-family: Helvetica;
+}
+
+.menor {
+  font-size: 20px;
+}
+
+.medio {
+  font-size: 25px;
+}
+
+.maior {
+  font-size: 30px;
+}
+/* Tamanho */
+
+/* Estilo */
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+/* Estilo */
+
+/* Espeçura */
+.thin,
+.bold,
+.bolder {
+  font-family: Helvetica;
+}
+
+.thin {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bolder {
+  font-weight: 900;
+}
+/* Espeçura */
+
+/* Fontes */
+.times {
+  font-family: "Times New Roman";
+}
+
+.courier {
+  font-family: "Courier New";
+}
+
+.helvetica {
+  font-family: Helvetica;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.serif {
+  font-family: serif;
+}
+/* Fontes */
+
+/* Espaçamento */
+.space {
+  letter-spacing: 10px;
+}
+/* Espaçamento */
+
+/* Transformação */
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+/* Transformação */
+
+/* Decoração */
+.underline {
+  text-decoration: underline;
+}
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.remove-underline {
+  text-decoration: none;
+}
+/* Decoração */
+
+/* Alinhamento */
+.text-aligned-d {
+  text-align: right;
+}
+
+.text-aligned-e {
+  text-align: left;
+}
+
+.text-aligned-c {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+.container-center-2 {
+  text-align: center;
+  width: 300px;
+  border: 3px solid #000;
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px;
+  margin-left: 300px;
+}
+/* Alinhamento */
+
+.separar-aula {
+  background-color: brown;
+  color: antiquewhite;
+  text-align: center;
+}
