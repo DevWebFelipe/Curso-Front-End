@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="separar-aula">Posição fixa, usado para criar menus</div>
+
+    <!-- Fixed -->
+    <div class="fixed">
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </div>
+    <div class="fixed-2">
+      <p>Exemplo fixo na lateral esquerda canto superior</p>
+    </div>
+    <!-- Fixed -->
+
+    <div class="separar-aula">Posição estática</div>
+
+    <!-- Static -->
+    <!-- É o padrão de todo componente -->
+    <div class="static">
+      <span>Posição estática</span>
+    </div>
+    <!-- Static -->
+
+    <div class="separar-aula">Posição relativa</div>
+
+    <!-- Relative -->
+    <div class="relative">
+      <span>Posição relativa</span>
+    </div>
+
+    <p>
+      <!-- isso aqui vai 'bugar' a exibição, deixei aqui para ter de exemplo 
+           de um problema em usar a posição relativa -->
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis iusto
+      non asperiores quae nesciunt rem, magnam, maxime ut sed voluptates optio
+      totam facilis quia doloremque aspernatur iste expedita odio harum.
+    </p>
+    <!-- Relative -->
+
+    <div class="separar-aula">Posição sticky</div>
+
+    <!-- Sticky -->
+    <!-- Aposição é onde ele foi inserido, onde ficará 'fixo', porém ele pode se comportar 
+         como relative, ao rodar o mouse assim que ele 'sumir' se tornará fixo, quando voltar
+         ele será relative novamente  -->
+    <div class="sticky">Fixado ao topo</div>
+    <div class="sticky-2">Fixado ao rodapé</div>
+    <!-- Sticky -->
+
+    <div class="separar-aula">Posição absoluta</div>
+
+    <!-- Absolute -->
+    <!-- fica 'solto' e começa sempre na posição inicial do ultimo elemento da
+         tela podendo ser posto em qualquer lugar da tela -->
+    <div class="absolute">
+      <span>Posição absoluta</span>
+    </div>
+    <p>Exemplo no canto superior direito da tela</p>
+    <!-- Absolute -->
+
+    <div class="separar-aula">Juntando posições absoluta e relativa</div>
+
+    <!-- Absolute & Relative -->
+    <div class="relativ-container">
+      <div class="absolut-1"></div>
+      <div class="absolut-2"></div>
+    </div>
+    <!-- Absolute & Relative -->
+
+    <div class="separar-aula">
+      Z-index (Em caso de sobreposição, é isso que determina quem será exibido)
+    </div>
+
+    <!-- Z-index -->
+    <!-- Quão maior, maior será a prioridade ao sobrepor-se sobre
+         outros elementos na tela -->
+    <div class="relativ-container-1">
+      <div class="absolut-3">Z-index 1</div>
+      <div class="absolut-4">Z-index 2</div>
+      <div class="absolut-5">Z-index 3</div>
+    </div>
+    <!-- Z-index -->
+  </body>
+</html>

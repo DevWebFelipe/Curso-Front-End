@@ -1,0 +1,144 @@
+/* Z-index */
+.relativ-container-1 {
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+  margin: 10px;
+  position: relative; /* permite que eu consiga usar o absolute porém tendo como 
+                         delimitação, esse componente */
+}
+
+.absolut-3,
+.absolut-4,
+.absolut-5 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(156, 79, 7);
+}
+
+.absolut-3 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.absolut-4 {
+  top: 10px;
+  left: 10px;
+  background-color: rgb(74, 156, 7);
+  z-index: 2;
+}
+.absolut-5 {
+  top: 40px;
+  left: 40px;
+  background-color: rgb(59, 7, 156);
+  z-index: 1;
+}
+/* Z-index */
+
+/* Fixed */
+.fixed {
+  position: fixed; /* Usado em menus, faz ficar fixo no lugar sempre */
+  color: #fff;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.fixed-2 {
+  height: 100px;
+}
+/* Fixed */
+
+/* Sticky */
+.sticky {
+  position: sticky;
+  color: #000;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px 10px 160px;
+  background-color: rgba(9, 126, 57, 0.637);
+  top: 50px;
+}
+
+.sticky-2 {
+  position: sticky;
+  color: #000;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px 10px 320px;
+  background-color: rgba(126, 114, 9, 0.637);
+  bottom: 50px; /* Sem isso ele é Static, com isso, ele se mantém sempre
+                   No mínimo 50px do rodapé */
+}
+/* Sticky */
+
+/* Absolute & Relative */
+.relativ-container {
+  width: 300px;
+  height: 300px;
+  border: 3px solid red;
+  margin: 10px;
+  position: relative; /* permite que eu consiga usar o absolute porém tendo como 
+                         delimitação, esse componente */
+}
+
+.absolut-2,
+.absolut-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+.absolut-1 {
+  left: 20px;
+  top: 20px;
+}
+
+.absolut-2 {
+  left: 50px;
+  top: 50px;
+}
+/* Absolute & Relative */
+
+/* Static */
+.static {
+  position: static;
+  background-color: rgb(27, 165, 142);
+  color: #fff;
+  width: 100px;
+  width: 100px;
+  margin: 10px;
+}
+/* Static */
+
+/* Relative */
+.relative {
+  position: relative;
+  background-color: rgb(20, 66, 5);
+  color: #fff;
+  width: 100px;
+  width: 100px;
+  top: 50px;
+  left: 50px;
+}
+/* Relative */
+
+/* Absolute */
+.absolute {
+  position: absolute;
+  background-color: rgb(153, 17, 153);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 2px;
+}
+/* Absolute */
+
+.separar-aula {
+  background-color: brown;
+  color: antiquewhite;
+  text-align: center;
+  text-transform: uppercase;
+}
