@@ -42,7 +42,8 @@
       <div>
         <label for="age">Idade:</label>
         <input type="text" name="age" />
-        <!-- O FOR deve ser o mesmo valor do atributo NAME ao qual corresponde essa label -->
+        <!-- O FOR deve ter o mesmo valor do atributo NAME ao 
+             qual corresponde essa label -->
       </div>
     </form>
 
@@ -58,6 +59,7 @@
 
     <form action="" method="">
       <div>
+        <!-- ComboBox -->
         <label for="job">Selecione uma profissão</label>
         <select name="job">
           <option value="programador">Programador</option>
@@ -65,6 +67,159 @@
           <option value="estudante" selected>Estudante</option>
           <!-- SELECTED define que já vai vir selecionado ali -->
         </select>
+      </div>
+
+      <div>
+        <!-- CheckedComboBox -->
+        <label for="job">slecione os itens</label>
+        <select name="job" multiple>
+          <!-- Atributo MULTIPLE transforma em multi-seleção (ctrl + click) -->
+          <option value="pao">Pão</option>
+          <option value="cafe">Café</option>
+          <option value="leite" selected>Leite</option>
+          <option value="acucar" selected>Açucar</option>
+        </select>
+      </div>
+
+      <div>
+        <!-- Memo -->
+        <label for="obs">Opine abaixo sobre o post:</label>
+        <textarea name="obs" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <!-- GroupBox -->
+        <fieldset>
+          <legend>Selecione os filtros desejados:</legend>
+          <label for="name">Nome:</label>
+          <input type="text" name="name" />
+          <label for="last-name">Sobrenome:</label>
+          <input type="text" name="last-name" />
+        </fieldset>
+      </div>
+
+      <div>
+        <!-- Edit com auto complete -->
+        <label for="type">Tipo de servidor</label>
+        <!-- No input, colocar o atributo list com o ID da lista de opções -->
+        <input type="text" name="type" list="type" />
+
+        <!-- Criar a tag datalist com os values que serão mostrados
+             no input -->
+        <datalist id="type">
+          <option value="Windows 10"></option>
+          <option value="Windows server"></option>
+          <option value="Linux"></option>
+          <option value="IOS"></option>
+        </datalist>
+      </div>
+
+      <div>
+        <!-- Edit com * na formatação do texto -->
+        <label for="password">Digite sua senha:</label>
+        <input type="password" />
+      </div>
+
+      <div>
+        <!-- RadioButton (com fildset fica como se tivesse dentro 
+             de um GroupBox) -->
+        <fieldset>
+          <legend for="option">Selecione uma das opções:</legend>
+
+          <div class="radio">
+            <input type="radio" value="0" name="option" />
+            <label for="0">Não</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" value="1" name="option" />
+            <label for="1">Sim</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" value="2" name="option" />
+            <label for="2">Talvez</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <!-- CheckBox -->
+        <fieldset>
+          <legend for="optionals">Opicionais do carro:</legend>
+
+          <div class="radio">
+            <input type="checkbox" name="opitionals[]" value="bit_tires" />
+            <label for="bit_tires">Pneus Grandes</label>
+          </div>
+
+          <div class="radio">
+            <input type="checkbox" name="opitionals[]" value="turbo-engine" />
+            <label for="turbo-engine">Motor Turbo</label>
+          </div>
+
+          <div class="radio">
+            <input type="checkbox" name="opitionals[]" value="hybrid" />
+            <label for="hybrid">Híbrido</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div>
+        <!-- DateEdit -->
+        <label for="date">Selecione a data:</label>
+        <input type="date" name="date" />
+      </div>
+
+      <div>
+        <!-- Selecionar arquivo para enviar -->
+        <label for="file">Selecione o arquivo:</label>
+        <input type="file" name="file" />
+      </div>
+
+      <div>
+        <!-- Edit com NumbersOnly marcado -->
+        <label for="number">Quantidade:</label>
+        <input type="number" name="number" />
+      </div>
+
+      <div>
+        <!-- Edit validando e-mail -->
+        <label for="mail">Digite seu e-mail:</label>
+        <input type="email" name="mail" />
+      </div>
+
+      <div>
+        <!-- Edit com NumbersOnly marcado e propriedade 
+             text informada -->
+        <label for="number">Quantidade:</label>
+        <input type="number" name="number" value="32" />
+      </div>
+
+      <div>
+        <!-- Edit com NumbersOnly marcado e propriedade 
+             enabled desmarcada -->
+        <label for="number">Quantidade:</label>
+        <input type="number" name="number" disabled />
+      </div>
+
+      <div>
+        <!-- Edit validando e-mail com 'sombra' de dica de preenchimento -->
+        <label for="mail">Digite seu e-mail:</label>
+        <input type="email" name="mail" placeholder="teste@gmail.com" />
+      </div>
+
+      <div>
+        <!-- Edit validando e-mail com obrigatoriedade de preenchimento -->
+        <label for="mail">Digite seu e-mail:</label>
+        <input type="email" name="mail" required />
+      </div>
+
+      <div class="roda-pe">
+        <!-- Button com método Limpar -->
+        <input type="reset" value="Limpar" />
+
+        <input type="submit" value="Enviar" />
       </div>
     </form>
   </body>

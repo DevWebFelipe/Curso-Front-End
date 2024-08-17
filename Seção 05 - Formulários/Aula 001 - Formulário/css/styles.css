@@ -20,3 +20,14 @@ div input,
 div label {
   display: block;
 }
+
+.radio input,
+.radio label,
+.radio button {
+  display: inline-block;
+}
+
+.roda-pe input,
+.roda-pe label {
+  display: inline-block;
+}
