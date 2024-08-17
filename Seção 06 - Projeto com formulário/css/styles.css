@@ -1,0 +1,60 @@
+/* reset (resetar base do html) */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f0ebf8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333;
+}
+
+p,
+label {
+  color: #444;
+}
+
+input {
+  /* Altera todos os tipos de input */
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="file"] {
+  /* Altera somente o tipo de input selecionado entre colchetes */
+  width: 400px;
+}
+
+/* Page Header */
+.header {
+  height: 160px;
+  padding: 20px;
+  background-color: #673ab7;
+}
+
+.header h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+/* Form container */
+.form-container {
+  background-color: #fdfdfd;
+  width: 60%;
+  margin: 0 auto; /* Centralizará sempre no meio */
+  position: relative; /* Se tiver algum elemento como absolute, este será a referência dele */
+  top: -62px; /* Como a posição é relative, consito mexer o elemento na tela */
+}
