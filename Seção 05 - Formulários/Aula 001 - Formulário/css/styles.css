@@ -1,0 +1,22 @@
+.separador-aulas {
+  color: #ddd;
+  background-color: #5e2206;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+div input,
+div label {
+  display: block;
+}

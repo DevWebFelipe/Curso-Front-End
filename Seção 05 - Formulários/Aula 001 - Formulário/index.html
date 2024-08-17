@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="separador-aulas">Formulários HTML</div>
+
+    <form>
+      <label>Nome:</label>
+      <input type="text" />
+      <div>
+        <label>Sobrenome:</label>
+        <input type="text" />
+      </div>
+    </form>
+
+    <div class="separador-aulas">Ação e método da TAG Form</div>
+
+    <form action="/enviar" method="POST">Enviar formulário com POST</form>
+    <form action="/consultar" method="GET">
+      Buscar dados para formulário com GET
+    </form>
+
+    <div class="separador-aulas">Atributo NAME no input</div>
+
+    <form action="/enviar" method="POST">
+      <div>
+        <label>Idade:</label>
+        <input type="text" name="age" />
+        <!-- Facilita a busca do valor desse
+        campo no backend -->
+      </div>
+    </form>
+
+    <div class="separador-aulas">Atributo da label</div>
+
+    <form action="/enviar" method="POST">
+      <div>
+        <label for="age">Idade:</label>
+        <input type="text" name="age" />
+        <!-- O FOR deve ser o mesmo valor do atributo NAME ao qual corresponde essa label -->
+      </div>
+    </form>
+
+    <div class="separador-aulas">Enviar dados do formulário</div>
+
+    <form action="" method="">
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+
+    <div class="separador-aulas">Tipos diferentes de inputs</div>
+
+    <form action="" method="">
+      <div>
+        <label for="job">Selecione uma profissão</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="professora">Professora</option>
+          <option value="estudante" selected>Estudante</option>
+          <!-- SELECTED define que já vai vir selecionado ali -->
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
