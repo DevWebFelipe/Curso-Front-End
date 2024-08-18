@@ -6,12 +6,14 @@
   --cor-verde-tom-3: #09c184;
   --cor-verde-tom-4: #0c5149;
   --cor-verde-tom-5: #0d192b;
+  --cor-recomendado: #5c060d;
 
   /* Paleta de cores textos */
   --cor-texto-padrao: #616161;
   --cor-texto-titulo: #444343;
   --cor-texto-branco: #fff;
   --cor-sombra-texto: #000;
+  --cor-fundo-texto: #ecebeb;
 }
 
 * {
@@ -37,6 +39,8 @@ p {
   height: 80px;
   background-color: var(--cor-verde-tom-5);
   padding: 0 2rem;
+  position: fixed;
+  z-index: 1;
 }
 
 nav {
@@ -92,6 +96,10 @@ nav {
 }
 
 /* main banner */
+.main-container {
+  padding-top: 80px;
+}
+
 .main-banner {
   background-image: url("../img/mainBanner.jpg");
   background-size: cover;
@@ -156,4 +164,193 @@ nav {
 
 .services-container p {
   line-height: 25px;
+}
+
+/* Preços e planos */
+.pricing-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 36px;
+}
+
+.pricing-container p {
+  font-size: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.plan {
+  flex: 1;
+  max-width: 275px;
+  margin: 0 20px;
+}
+
+.plan ul {
+  padding: 0;
+}
+
+.plan li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--cor-verde-tom-5);
+  color: var(--cor-verde-tom-1);
+}
+
+.plan .price {
+  width: 200px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--cor-verde-tom-1);
+  color: var(--cor-texto-titulo);
+  text-align: center;
+  line-height: 120px;
+  margin: 0 auto -50px; /* -50pc para ficar 'dentro' dos items */
+  font-size: 20px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--cor-verde-tom-5);
+  background-color: var(--cor-verde-tom-3);
+  font-weight: bold;
+  padding: 50px 0;
+}
+
+.plan .plan-btn {
+  background-color: var(--cor-verde-tom-3);
+  color: var(--cor-verde-tom-5);
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+.plan .plan-btn:hover {
+  background-color: var(--cor-verde-tom-1);
+}
+
+.plan .recommended {
+  background-color: var(--cor-verde-tom-5);
+  color: var(--cor-verde-tom-1);
+}
+
+.plan .plan-btn.recommended:hover {
+  background-color: var(--cor-verde-tom-1);
+  color: var(--cor-verde-tom-5);
+}
+
+/* serchdomain-container */
+.serchdomain-container {
+  background-color: var(--cor-verde-tom-4);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.serchdomain-container h2 {
+  color: var(--cor-fundo-texto);
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.serchdomain-container p {
+  color: var(--cor-fundo-texto);
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.serchdomain-container input {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.serchdomain-container input[type="text"] {
+  width: 60%;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.serchdomain-container input[type="submit"] {
+  background-color: var(--cor-verde-tom-1);
+  padding: 15px 30px;
+  color: var(--cor-verde-tom-5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.serchdomain-container input[type="submit"]:hover {
+  background-color: var(--cor-verde-tom-3);
+}
+
+/* Contato */
+.contact-container {
+  text-align: center;
+  padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 224px;
+  /* ((1px de borda) + (10px de margim)) * (2 componentes) = 48px de espaço usado */
+  /* (224px de largura) * (2 componentes) = 448px de largura */
+  /* A soma de tudo da 470px que é o valor que deve ser usado no textarea para ficar alinhado */
+
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--cor-fundo-texto);
+  margin: 0 10px 20px;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 0 auto 20px;
+  width: 470px;
+  height: 150px;
+}
+
+.contact-container input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--cor-verde-tom-1);
+  cursor: pointer;
+  color: var(--cor-verde-tom-5);
+  transition: 0.5;
+}
+
+.contact-container input[type="submit"]:hover {
+  background-color: var(--cor-verde-tom-4);
+  cursor: pointer;
+  color: var(--cor-verde-tom-1);
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0 100px 0;
 }
