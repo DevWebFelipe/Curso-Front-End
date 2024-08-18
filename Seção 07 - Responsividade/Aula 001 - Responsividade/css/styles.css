@@ -1,0 +1,102 @@
+/* 
+
+Os BreakPoints mais comuns são:
+
+- 600px e abaixo -> Celular
+- 768px e até 600px -> Tablets
+- 992px e até 768px -> Mini laptops
+- 992px e acima -> Laptops e desktop
+
+É comum em projetos profissionais utilizarmos esses 
+valores para desenvolvermos para diferentes dispositivos
+
+*/
+
+/* Media query */
+h1 {
+  color: red;
+}
+
+h3 {
+  display: none;
+}
+
+p {
+  background-color: red;
+  color: #000;
+}
+
+/* Se a tela for menor que 500px vai aplicar as
+   regras que tiverem aqui dentro 
+   
+   Normalmente usado quando é desenvolvido o site para telas maiores
+   e no fina, adaptado para telas menos como mobile*/
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+
+  p {
+    background-color: rgb(110, 75, 75);
+    color: #c52626;
+  }
+}
+
+/* Se a tela for maior que 700px vai aplicar as
+   regras que tiverem aqui dentro 
+   
+   Normalmente usado quando é desenvolvido o site para mobile 
+   e no final, adaptado para telas maiores*/
+@media screen and (min-width: 700px) {
+  h1 {
+    color: chartreuse;
+  }
+
+  p {
+    background-color: #333;
+    color: red;
+  }
+}
+
+/* Celular */
+@media screen and (max-width: 600px) {
+  .tablet,
+  .mini-laptop,
+  .desktop {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .celular,
+  .mini-laptop,
+  .desktop {
+    display: none;
+  }
+}
+
+/* Mini laptops */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .celular,
+  .tablet,
+  .desktop {
+    display: none;
+  }
+}
+
+/* Laptop e Desktop */
+@media screen and (min-width: 992px) {
+  .celular,
+  .tablet,
+  .mini-laptop {
+    display: none;
+  }
+}
+
+/* Celular com landscape */
+@media screen and (orientation: landscape) {
+  h3 {
+    display: block;
+  }
+}
