@@ -34,7 +34,8 @@ input[type="number"],
 input[type="email"],
 input[type="date"],
 input[type="file"],
-textarea {
+textarea,
+fieldset {
   /* Altera somente o tipo de input selecionado entre colchetes */
   width: 400px;
 }
@@ -47,7 +48,7 @@ textarea {
 .header {
   height: 160px;
   padding: 20px;
-  background-color: #673ab7;
+  background-color: #864a05;
 }
 
 .header h3 {
@@ -71,8 +72,8 @@ textarea {
 }
 
 .form-header p {
-  color: #673ab7;
-  border-bottom: 2px solid #673ab7;
+  color: #864a05;
+  border-bottom: 2px solid #864a05;
   width: 200px;
   text-align: center;
   margin: 0 auto;
@@ -86,8 +87,8 @@ textarea {
   padding: 30px;
 }
 
-.form-title {
-  margin-bottom: 15px;
+.form-body p {
+  margin-bottom: 25px;
 }
 
 .form-title p {
@@ -99,7 +100,7 @@ textarea {
 }
 
 .box-input {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .block {
@@ -108,9 +109,10 @@ textarea {
 
 .optional-box {
   display: inline-block;
-  margin: 0 30px 30px 0;
+  margin: 15px 15px 15px 10px;
 }
 
+.box-opition,
 .optional-box p {
   margin-bottom: 20px;
 }
@@ -125,7 +127,7 @@ textarea {
 }
 
 .btn-summit {
-  background-color: #673ab7;
+  background-color: #864a05;
   border-radius: 10px;
   color: #fff;
   border: 2px solid transparent; /* Transparente para criar efeito */
@@ -134,11 +136,20 @@ textarea {
   cursor: pointer;
   text-transform: uppercase;
   transition: 0.5s; /* Tempo de transição ao acionar o efeito no HOVER (abaixo) */
+  margin: 0 auto;
 }
 
 .btn-summit:hover {
   /* Efeito ao passar o mouse em cima, acontece no tempo de transição (acima) */
   background-color: #fff;
-  border-color: #673ab7;
-  color: #673ab7;
+  border-color: #864a05;
+  color: #864a05;
+}
+
+.radio {
+  margin: 10px;
+}
+
+.radio label {
+  margin-right: 15px;
 }
