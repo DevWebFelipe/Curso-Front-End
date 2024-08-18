@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="seperador-aula">Flex</div>
+
+    <div class="flex">
+      <p>Meu</p>
+      <p>Primeiro</p>
+      <p>Elemento</p>
+      <p>Com flex</p>
+    </div>
+
+    <div class="flex-2">
+      <ul class="flex-list">
+        <li class="flex-item">Teste 1</li>
+        <li class="flex-item">Teste 2</li>
+        <li class="flex-item">Teste 3</li>
+        <li class="flex-item">Teste 4</li>
+        <li class="flex-item">Teste 5</li>
+      </ul>
+    </div>
+
+    <div class="seperador-aula">Display em coluna</div>
+
+    <div class="flex-column">
+      <span>Um</span>
+      <span>Dois</span>
+      <span>Três</span>
+      <span>Quatro</span>
+    </div>
+
+    <div class="flex-column-1">
+      <span>Um</span>
+      <span>Dois</span>
+      <span>Três</span>
+      <span>Quatro</span>
+    </div>
+
+    <div class="seperador-aula">Flex wrap</div>
+
+    <div class="flex-wrap">
+      <div class="box" style="background-color: antiquewhite"></div>
+      <div class="box" style="background-color: blueviolet"></div>
+      <div class="box" style="background-color: aqua"></div>
+      <div class="box" style="background-color: aquamarine"></div>
+      <div class="box" style="background-color: brown"></div>
+      <div class="box" style="background-color: blue"></div>
+      <div class="box" style="background-color: chartreuse"></div>
+      <div class="box" style="background-color: black"></div>
+      <div class="box" style="background-color: crimson"></div>
+    </div>
+
+    <div class="seperador-aula">Posicionando o conteúdo na horizontal</div>
+
+    <div class="exemplo">
+      <h2>Center</h2>
+      <div class="center">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+
+      <h2>Space around</h2>
+      <div class="space-around">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+
+      <h2>Space between</h2>
+      <div class="space-between">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+
+      <h2>End</h2>
+      <div class="end">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+    </div>
+
+    <div class="seperador-aula">Posicionando o conteúdo na vertical</div>
+
+    <div class="exemplo">
+      <h2>Center</h2>
+      <div class="align-center">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+
+      <h2>End</h2>
+      <div class="flex-end">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+
+      <h2>Strech</h2>
+      <div class="stretch">
+        <div class="box">Item 1</div>
+        <div class="box">Item 2</div>
+        <div class="box">Item 3</div>
+      </div>
+    </div>
+
+    <div class="seperador-aula">Espaçamento do conteúdo dentro do flex</div>
+
+    <div class="gap">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="seperador-aula">
+      Alterar a ordem com que os elementos são dispostos na tela
+    </div>
+
+    <h2>Sem ordem</h2>
+    <div class="order">
+      <div class="box">6</div>
+      <div class="box">8</div>
+      <div class="box">5</div>
+      <div class="box">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <h2>Com ordem</h2>
+    <div class="order">
+      <div class="box" id="six">6</div>
+      <div class="box" id="eight">8</div>
+      <div class="box" id="five">5</div>
+      <div class="box" id="three">3</div>
+      <div class="box" id="seven">7</div>
+      <div class="box" id="one">1</div>
+      <div class="box" id="four">4</div>
+      <div class="box" id="two">2</div>
+    </div>
+
+    <div class="seperador-aula">Manipulando o tamanho dos elementos</div>
+
+    <div class="grow">
+      <div class="box">6</div>
+      <div class="box bigest">8</div>
+      <div class="box">5</div>
+      <div class="box big">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box big">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <div class="seperador-aula">Tamanho base</div>
+
+    <div class="basis">
+      <div class="box">6</div>
+      <div class="box bigest">8</div>
+      <div class="box">5</div>
+      <div class="box big">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box big">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <div class="basis-grow">
+      <div class="box">6</div>
+      <div class="box bigest">8</div>
+      <div class="box">5</div>
+      <div class="box big">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box big">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <div class="seperador-aula">Manipulando tamanho dos elementos</div>
+
+    <div class="shrink">
+      <div class="box">6</div>
+      <div class="box small">8</div>
+      <div class="box">5</div>
+      <div class="box small">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box small">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <div class="seperador-aula">Atalho para propriedades de tamanho</div>
+
+    <div class="shorthand">
+      <div class="box">6</div>
+      <div class="box small">8</div>
+      <div class="box">5</div>
+      <div class="box big">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box small">4</div>
+      <div class="box">2</div>
+    </div>
+
+    <div class="seperador-aula">Auto alinhamento</div>
+
+    <div class="auto-alignment">
+      <div class="box">6</div>
+      <div class="box">8</div>
+      <div class="box">5</div>
+      <div class="box different">3</div>
+      <div class="box">7</div>
+      <div class="box">1</div>
+      <div class="box">4</div>
+      <div class="box">2</div>
+    </div>
+  </body>
+</html>

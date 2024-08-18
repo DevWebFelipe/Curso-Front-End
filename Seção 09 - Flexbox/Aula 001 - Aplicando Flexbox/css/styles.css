@@ -1,0 +1,326 @@
+.exemplo {
+  height: auto;
+  width: auto;
+  background-color: #f5f4f4;
+}
+
+body {
+  margin-bottom: 900px;
+}
+
+.seperador-aula {
+  height: 20px;
+  font-size: 20px;
+  color: #ddd;
+  background-color: brown;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Vai pegar todos os elementos que estão um 
+   embaixo do outro e jogar para o lado direito 
+   um do outro */
+.flex {
+  display: flex;
+  background-color: #ddd;
+  margin-bottom: 5px;
+}
+
+.flex-2 {
+  background-color: #aaa;
+  margin-bottom: 5px;
+}
+
+.flex-list {
+  display: flex;
+  list-style: none;
+}
+
+.flex-item {
+  margin-left: 30px;
+}
+
+/* Alterar o comportamento do Flex para ao invés
+   de pegar elementos um de baixo do outro e jogar
+   para a direita, pegar os elementos da direita e 
+   jogar para baixo um do outro */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  margin-bottom: 5px;
+}
+
+.flex-column-1 {
+  display: flex;
+  background-color: #aaa;
+  flex-direction: column-reverse;
+}
+
+/* Faz o mesmo efeito do Flex, jogando os elementos 
+   para a direita um do outro, porém, nesse caso ele
+   respeita uma valor por coluna, que faz com que se
+   possa quebrar as colunas em mais de uma linha*/
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 20px;
+  width: 32%;
+  margin: 5px auto;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+/* Permite alinhar o posicionamento dos elementos 
+   conforme desejado */
+.exemplo h2 {
+  margin: 20px 0;
+  text-align: center;
+  border: 2px solid #000;
+}
+
+.center,
+.space-around,
+.space-between,
+.end {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #ddd;
+  border: 1px solid #000;
+}
+
+.exemplo .center .box,
+.exemplo .space-around .box,
+.exemplo .space-between .box,
+.exemplo .end .box {
+  width: 50px;
+  margin: 5px;
+}
+
+/* (Horizontal) Centraliza no meio sem mexer nas 
+   medias pré definidas */
+.exemplo .center {
+  justify-content: center;
+}
+
+/* (Horizontal) Ajusta as medidas para ter a 
+   mesma margem em todas as direções e ocupar 
+   todo o espaço da tela */
+.exemplo .space-around {
+  justify-content: space-around;
+}
+
+/* (Horizontal) Joga o primeiro elemento para 
+   o inicio da tela, e o ultimo para o final, 
+   posicionando todos os outros no meio com 
+   espaços iguais entre todos os elementos */
+.exemplo .space-between {
+  justify-content: space-between;
+}
+
+/* (Horizontal) Posiciona todos os elementos a direita da tela */
+.exemplo .end {
+  justify-content: end;
+}
+
+/* Alinhamento vertical */
+.align-center,
+.flex-end,
+.stretch {
+  display: flex;
+  margin-bottom: 40px;
+  height: 200px;
+  background-color: #ddd;
+  border: 1px solid #000;
+}
+
+.exemplo .align-center .box,
+.exemplo .stretch .box {
+  width: 50px;
+}
+
+/* Alinha no centro verticalmente */
+.align-center {
+  align-items: center;
+
+  /* Se usar junto com esse, vai alinhar extamente no centro
+     vertical e horizontalmente */
+  /* justify-content: center; */
+}
+
+/* Se estica no tamanho vertical do elemento pai */
+.stretch .box {
+  height: auto;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+/* Alinha verticalmente no final do elemento */
+.flex-end {
+  align-items: flex-end;
+}
+
+/* Gap -> vai alinhar os espaçamentos entre todos
+   os itens dentro do flex */
+.gap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #000;
+  gap: 5px;
+}
+
+.gap .box {
+  width: 32%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ALterar a ordem de disposição dos elementos */
+.order {
+  display: flex;
+}
+
+#one {
+  order: 1;
+}
+
+#two {
+  order: 2;
+}
+
+#three {
+  order: 3;
+}
+
+#four {
+  order: 4;
+}
+
+#five {
+  order: 5;
+}
+
+#six {
+  order: 6;
+}
+
+#seven {
+  order: 7;
+}
+
+#eight {
+  order: 8;
+}
+
+#nine {
+  order: 9;
+}
+
+/* Alterando o tamanho de alguns elementos dentro do flex */
+.grow {
+  display: flex;
+}
+
+.grow .box {
+  flex: 1;
+}
+
+.grow .big {
+  /* Os elementos de classe BIG, terão 2x o tamanho dos 
+       outros elementos dentro do flex */
+  flex: 2;
+}
+
+.grow .bigest {
+  flex: 3.5;
+}
+
+/* Manipulando o tamanho base */
+.basis {
+  display: flex;
+}
+
+.basis .box {
+  flex-basis: 20px;
+}
+
+/* Usando basis com grow */
+.basis-grow {
+  display: flex;
+}
+
+.basis-grow .box {
+  flex-basis: 20px;
+}
+
+.basis-grow .big {
+  flex-grow: 1;
+}
+
+.basis-grow .bigest {
+  flex-grow: 2.5;
+}
+
+/* shrink -> Controla o tamanho igual o grow, só que 
+   o grow aumenta o tamanho do componente, enquanto
+   o shrink diminui */
+.shrink {
+  display: flex;
+}
+
+.shrink .box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  width: auto;
+}
+
+/* Ao redimencionar a tela, esse elemento vai 'encolher'
+   2x mais que os outros, em tamanho 'base' ficará igual 
+   aos demais */
+.shrink .small {
+  flex-shrink: 2;
+}
+
+/* Atalho para unir propriedades de tamanho */
+.shorthand {
+  display: flex;
+}
+
+.shorthand .box {
+  width: auto;
+
+  /* 1º -> Valor de GROW (tamanho do elemento em relação aos outros) */
+  /* 2º -> Valor de SHRINK (proporção de encolhimento em relação aos outros) */
+  /* 3º -> Valor de BASIS (tamanho base dos elementos) */
+  flex: 1 1 50px;
+}
+
+.shorthand .big {
+  flex-grow: 2;
+}
+
+.shorthand .small {
+  flex-shrink: 2;
+}
+
+/* Auto alinhamento permite que 1 dos elementos possa
+   escapar a regra de alinhamento imposta aos demais
+   elementos */
+.auto-alignment {
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #000;
+}
+
+.auto-alignment .different {
+  align-self: center;
+}
