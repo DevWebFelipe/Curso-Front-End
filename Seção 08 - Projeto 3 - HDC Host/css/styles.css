@@ -1,0 +1,159 @@
+/* Geral */
+:root {
+  /* Paleta de cores site */
+  --cor-verde-tom-1: #07f9a2;
+  --cor-verde-tom-2: #09c184;
+  --cor-verde-tom-3: #09c184;
+  --cor-verde-tom-4: #0c5149;
+  --cor-verde-tom-5: #0d192b;
+
+  /* Paleta de cores textos */
+  --cor-texto-padrao: #616161;
+  --cor-texto-titulo: #444343;
+  --cor-texto-branco: #fff;
+  --cor-sombra-texto: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-texto-titulo);
+}
+
+p {
+  color: var(--cor-texto-padrao);
+}
+
+/* Barra de navegação */
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: var(--cor-verde-tom-5);
+  padding: 0 2rem;
+}
+
+nav {
+  position: relative;
+}
+
+.logo {
+  width: 70px;
+  margin-top: 5px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  box-shadow: 0px 0px 20px var(--cor-verde-tom-1);
+}
+
+.navbar-items {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  display: inline-block;
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.navbar-items a {
+  color: var(--cor-verde-tom-1);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-items a:hover {
+  color: var(--cor-texto-branco);
+}
+
+.navbar-items .default-btn {
+  color: var(--cor-verde-tom-5);
+  padding: 15px 20px;
+  background-color: var(--cor-verde-tom-1);
+  border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+  color: var(--cor-texto-branco);
+  background-color: var(--cor-verde-tom-4);
+}
+
+/* main banner */
+.main-banner {
+  background-image: url("../img/mainBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: var(--cor-texto-branco);
+  text-align: center;
+  font-weight: bold;
+  text-shadow: var(--cor-verde-tom-5) 4px 4px 4px;
+}
+
+.main-banner h1 {
+  font-size: 54px;
+}
+
+.main-banner p {
+  font-size: 32px;
+}
+
+/* Services */
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+  color: var(--cor-verde-tom-1);
+}
+
+.fa-rocket {
+  color: var(--cor-verde-tom-3);
+}
+
+.fa-comments {
+  color: var(--cor-verde-tom-4);
+}
+
+.services-container h3 {
+  margin-bottom: 25px;
+}
+
+.services-container p {
+  line-height: 25px;
+}
